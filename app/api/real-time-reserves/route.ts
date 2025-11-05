@@ -17,8 +17,8 @@ type ResponseData = {
 
 async function getRealTimeReserves(): Promise<NextResponse<ResponseData>> {
   // Add random latency between 0-5 seconds
-  const randomLatency = Math.random() * 5000
-  await new Promise(resolve => setTimeout(resolve, randomLatency))
+  // const randomLatency = Math.random() * 5000
+  // await new Promise(resolve => setTimeout(resolve, randomLatency))
   
   const data: ResponseData = {
     accountName: "TrueUSD",
